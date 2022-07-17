@@ -33,6 +33,7 @@
   --emerald: hsl(144, 62%, 53%);
   --coral: hsl(15, 100%, 65%);
   --white: hsl(0, 0%, 100%);
+  --blue-utp: rgb(0, 61, 108);
   --onyx: hsl(207, 8%, 21%);
   --onyx-2: hsl(207, 20%, 25%);
   
@@ -328,7 +329,7 @@ body {
 
 
 .header {
-  background: var(--white);
+  background: var(--blue-utp);
   position: fixed;
   top: 0;
   left: 0;
@@ -354,18 +355,18 @@ body {
 .logo {
   font-size: var(--fs-1);
   font-weight: var(--fw-600);
-  color: var(--space-cadet);
+  color: var(--white);
 
 }
 
-.menu-toggle-btn .icon { font-size: 28px; }
+.menu-toggle-btn .icon { color: var(--white); font-size: 28px; }
 
 .navbar { 
   position: absolute;
   top: 72px;
   left: 0;
   width: 100%;
-  background: var(--white);
+  background: var(--blue-utp);
   opacity: 0;
   visibility: hidden;
   transition: 0.5s var(--cubic-out);
@@ -382,7 +383,7 @@ body {
 }
 
 .navbar-link {
-  color: var(--onyx);
+  color: var(--white);
   font-size: var(--fs-6);
   font-weight: var(--fw-500);
   display: flex;
@@ -392,7 +393,7 @@ body {
   border-radius: var(--radius-6);
 }
 
-:is(.navbar-link, .header-profile, .notification):is(:hover, :focus, :active) { background: var(--black_08); }
+:is(.navbar-link, .header-profile, .notification):is(:hover, :focus, :active) { color: var(--onyx); background: var(--black_08); }
 
 .navbar-link.active { color: var(--blue-ryb); }
 
@@ -405,7 +406,7 @@ body {
 }
 
 .notification {
-  color: var(--onyx);
+  color: var(--white);
   padding: 8px;
   border-radius: var(--radius-6);
 }
@@ -427,13 +428,13 @@ body {
 .header :is(.profile-title, .profile-subtitle) { font-size: var(--fs-9);}
 
 .header .profile-title {
-  color: var(--onyx);
+  color: var(--white);
   margin-bottom: 2px;
   font-weight: var(--fw-600);
 }
 
 .header .profile-subtitle {
-  color: var(--cool-gray);
+  color: var(--pacific-blue);
   font-weight: var(--fw-500);
 }
 
